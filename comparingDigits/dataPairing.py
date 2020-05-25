@@ -106,10 +106,7 @@ x, y = comparisonDataConsecutive(trainset)
 traindataComp = Trainsetcomp(x,y)
 x,y = comparisonDataConsecutive(valset)
 valdataComp = Trainsetcomp(x,y)
-#print(traindataComp[0])
-#prepFunctions.show_dataComp(valdataComp[0][0], valdataComp[0][1])
-#print(len(traindataComp))
-#print(traindataComp.y.shape)
+
 
 trainloader = torch.utils.data.DataLoader(traindataComp,
                                           batch_size=64,
@@ -125,3 +122,7 @@ testloader = torch.utils.data.DataLoader(testdata,
 
 
 
+#print(traindataComp[0])
+#prepFunctions.show_dataComp(valdataComp[0][0], valdataComp[0][1])
+#print(len(traindataComp))
+#print(traindataComp.y.shape)
